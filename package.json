@@ -1,24 +1,25 @@
 {
-  "name": "lab1",
-  "version": "1.0.0",
-  "description": "лаба 1 по вебу",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install",
-    "lint": "prettier --check ."
-  },
-  "keywords": [
-    "lab",
-    "lab1"
-  ],
-  "author": "Olexandr Zelenskyi",
-  "license": "ISC",
-  "devDependencies": {
-    "eslint": "^7.32.0",
-    "husky": "^7.0.2",
-    "prettier": "2.4.1",
-    "stylelint": "^13.13.1",
-    "stylelint-config-standard": "^22.0.0"
-  }
+	"name": "lab1",
+	"version": "1.0.0",
+	"description": "лаба 1 по вебу",
+	"main": "index.js",
+	"scripts": {
+		"test": "npm run lint",
+		"prepare": "husky install",
+		"lint": "prettier --check .",
+		"format:fix": "prettier --write ."
+	},
+	"keywords": [
+		"lab",
+		"lab1"
+	],
+	"author": "Olexandr Zelenskyi",
+	"license": "ISC",
+	"devDependencies": {
+		"eslint": "^7.32.0",
+		"husky": "^7.0.2",
+		"prettier": "2.4.1",
+		"stylelint": "^13.13.1",
+		"stylelint-config-standard": "^22.0.0"
+	}
 }

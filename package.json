@@ -4,9 +4,10 @@
   "description": "лаба 1 по вебу",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npm run lint",
     "prepare": "husky install",
-    "lint": "prettier --check ."
+    "lint": "prettier --check .",
+    "format:fix": "prettier --write ."
   },
   "keywords": [
     "lab",

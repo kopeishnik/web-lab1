@@ -26,7 +26,7 @@ header {
 	left: 10%;
 }
 .page {
-	height: 70%;
+	min-height: 70%;
 	width: 100%;
 	display: flex;
 	flex-direction: row;
@@ -59,13 +59,12 @@ main {
 	border: 1px solid #85fd85;
 }
 .side {
-	height: 100%;
 	width: 50%;
 	display: flex;
 	flex-direction: column;
 }
 .quote {
-	height: 15%;
+	min-height: auto;
 	margin-bottom: 2px;
 	padding: 2%;
 	overflow: auto;
@@ -75,9 +74,9 @@ main {
 	vertical-align: middle;
 }
 .side-lower {
-	height: 84%;
 	display: flex;
 	flex-direction: row;
+	flex-grow: 1;
 }
 article {
 	height: 100%;
@@ -98,16 +97,32 @@ footer {
 	height: 15%;
 	width: 100%;
 	background-color: #4a6bff;
+	display: flex;
+	flex-direction: row;
+}
+.lower-text {
+	position: relative;
+	height: 80%;
+	width: 50%;
+	padding: 5px;
+	overflow: hidden;
+	color: white;
+	font-weight: 200;
+	text-align: center;
+}
+.lower-quote-layout {
+	width: 50%;
 }
 .lower-quote {
 	padding: 10px;
-	width: 30%;
+	width: 60%;
 	background-color: white;
 	border-radius: 10px;
 	position: relative;
 	top: 30%;
-	left: 60%;
+	left: 20%;
 	text-align: center;
+	overflow: hidden;
 }
 .popup-layout {
 	position: fixed;
@@ -140,4 +155,7 @@ button.popup-button {
 }
 .imgmap {
 	position: relative;
+}
+.img-no-map {
+	align-self: center;
 }
